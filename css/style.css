@@ -626,6 +626,7 @@ hr {
     display: flex;
     top: 550%;
     align-content: center;
+    text-align: center;
   }
 }
 /* main types logo */
@@ -1019,7 +1020,7 @@ hr {
 
 @media (max-width: 375px) {
   .main__repair {
-    width: 900px;
+    height: 900px;
   }
 }
 /* clients */
@@ -1278,8 +1279,11 @@ hr {
 }
 
 @media (max-width: 375px) {
+  .main__map {
+    height: 350px !important;
+  }
   .main__map-questions {
-    top: -45%;
+    top: -125%;
     background-color: transparent;
   }
   .main__map-questions-cont {
