@@ -90,6 +90,12 @@ main {
   flex: 1;
 }
 
+@media (max-width: 375px) {
+  main {
+    width: 375px;
+  }
+}
+
 .main__container {
   max-width: 1440px;
   margin: 0 auto;
@@ -657,18 +663,9 @@ hr {
   margin: 12px;
 }
 
-.main__types-cards-images-image2 {
-  display: none;
-}
-
 @media (max-width: 375px) {
   .main__types-cards-images-image img {
-    width: 340px;
-    margin: 100px;
-    margin-left: 110px;
-  }
-  .main__types-cards-images-image2 {
-    width: 340px;
+    max-width: 340px;
     margin: 100px;
     margin-left: 110px;
   }
@@ -943,6 +940,25 @@ hr {
   color: #e3b873;
 }
 
+.main__repair-image {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .main__repair-styles h1 {
+    display: none;
+  }
+  .main__repair-image {
+    display: flex;
+    position: relative;
+    padding: 10px;
+  }
+  .main__repair-image img {
+    position: absolute;
+    top: -10%;
+  }
+}
+
 .main__repair-styles-link {
   margin-bottom: 25px;
   color: #fff;
@@ -997,6 +1013,11 @@ hr {
   position: absolute;
 }
 
+@media (max-width: 375px) {
+  .main__repair {
+    width: 900px;
+  }
+}
 /* clients */
 .main__clients {
   position: relative;
@@ -1251,6 +1272,24 @@ hr {
   box-shadow: 0 0 10px 0 #e3b873 inset, 0 0 20px 2px #e3b873;
   border: 3px solid #e3b873;
 }
+
+@media (max-width: 375px) {
+  .main__map-questions {
+    top: -45%;
+    background-color: transparent;
+  }
+  .main__map-questions-cont {
+    flex-direction: column;
+  }
+  .main__map-questions-input-long,
+  .main__map-questions-input {
+    width: 340px;
+  }
+  .main__map-questions-btn {
+    width: 340px;
+  }
+}
+
 /* map */
 .main__map-contact {
   display: flex;
@@ -1261,7 +1300,7 @@ hr {
   padding-top: 260px;
 }
 
-.main__map-contact img {
+.main__map-contact .main__map-image {
   width: 1000px;
   margin-top: 40px;
 }
@@ -1275,6 +1314,10 @@ hr {
   text-transform: uppercase;
 }
 
+.main__map-contact h3 {
+  display: none;
+}
+
 .main__map-contact-svg {
   flex-direction: row;
   margin-top: 20px;
@@ -1285,6 +1328,54 @@ hr {
   cursor: pointer;
 }
 
+.main__map-logos {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .main__map {
+    background-image: none;
+    background-color: #131313;
+  }
+  .main__map-contact h2 {
+    display: none;
+  }
+  .main__map-contact h3 {
+    display: flex;
+    margin-top: 50px;
+    color: #e3b873;
+    font-size: 20px;
+    font-family: "Yeseva One", serif;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .main__map-contact-svg {
+    display: none;
+  }
+  .main__map-contact-svg2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+  .main__map-logos {
+    display: flex;
+  }
+  .main__map-contact .main__map-image {
+    margin-top: -115%;
+    width: 340px;
+  }
+  .main__repair {
+    width: 375px;
+  }
+  .main__map {
+    height: 900px;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 0;
+  }
+}
 /* footer */
 footer {
   height: 133px;
@@ -1347,4 +1438,10 @@ footer button {
 footer button:hover {
   box-shadow: 0 0 10px 0 #e3b873 inset, 0 0 20px 2px #e3b873;
   border: 3px solid #e3b873;
+}
+
+@media (max-width: 375px) {
+  footer {
+    display: none;
+  }
 }
