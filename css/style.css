@@ -138,6 +138,7 @@ main {
   font-family: "Yeseva One", serif;
   font-weight: 300;
   text-transform: uppercase;
+  line-height: 1.5;
 }
 
 .main__first-wrapper h1 span {
@@ -174,6 +175,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: -15px;
+    text-align: center;
+  }
+  .main__first-wrapper-btns button {
+    padding: 15px 28%;
+  }
+  .main__first-wrapper {
+    margin-left: -25px;
   }
 }
 
@@ -457,11 +466,6 @@ hr {
   justify-content: center;
 }
 
-/* .main__third-input {
-  align-items: center;
-  justify-content: center;
-} */
-
 .main__third-input-parag {
   width: 681px;
   margin: 0 auto;
@@ -592,22 +596,6 @@ hr {
 
 .main__third-input-check-cont-btn {
   display: none;
-  padding: 17px 80px;
-  font-size: 13px;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  border-radius: 2px;
-  background-color: #e3b873;
-  color: #fff;
-  cursor: pointer;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-}
-
-.main__third-input-check-cont-btn:hover {
-  box-shadow: 0 0 10px 0 #e3b873 inset, 0 0 20px 2px #e3b873;
-  border: 3px solid #e3b873;
 }
 
 @media (max-width: 375px) {
@@ -618,15 +606,45 @@ hr {
   .main__third-input-check-text {
     color: #fff;
   }
+  .main__third-input-label button {
+    display: none;
+  }
   .main__third-input-check-cont-btn {
-    width: 90%;
-    left: 5%;
-    right: 10%;
     position: absolute;
     display: flex;
-    top: 550%;
+    width: 340px;
+    left: 5%;
+    right: 10%;
+    padding: 17px 130px;
+    font-size: 13px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color: #e3b873;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    top: 300%;
     align-content: center;
     text-align: center;
+  }
+  .main__third-input-check-cont-btn:hover {
+    box-shadow: 0 0 10px 0 #e3b873 inset, 0 0 20px 2px #e3b873;
+    border: 3px solid #e3b873;
+  }
+  .main__third-input-label-first {
+    margin-bottom: 30px;
+  }
+  .main__third-input-label-first input {
+    width: 340px;
+  }
+  .main__third-input-label {
+    margin-left: 10%;
+  }
+  .main__third-input-check {
+    margin-right: 18%;
   }
 }
 /* main types logo */
