@@ -673,6 +673,9 @@ hr {
     margin-top: 15px;
   }
 }
+.main__types-head {
+  display: none;
+}
 /* cards   */
 .main__types-cards-images {
   display: flex;
@@ -1181,7 +1184,7 @@ hr {
     text-transform: uppercase;
     font-weight: 300;
     margin-top: 70px;
-    margin-left: 25px;
+    margin-left: 70px;
   }
 }
 /* map */
